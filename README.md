@@ -4,7 +4,7 @@
 
 面向 DSH Web UI 的凌波丽 / EVA 零号机主题皮肤。设计语言采用雾白、冰蓝、深海军蓝、医疗舱玻璃和极少量红色焦点。
 
-![暗色模式预览](preview/dark.webp)
+![凌波丽 · UNIT-00 实际运行截图](preview/dark.webp)
 
 ## 特性
 

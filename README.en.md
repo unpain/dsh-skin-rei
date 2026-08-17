@@ -2,7 +2,7 @@
 
 An unofficial Rei Ayanami / EVA Unit-00 interface skin for the DSH Web UI, built around porcelain white, frost blue, deep navy, medical-capsule glass, and restrained red focus accents.
 
-![Dark preview](preview/dark.webp)
+![Rei · UNIT-00 runtime screenshot](preview/dark.webp)
 
 ## Highlights
 
