@@ -160,8 +160,8 @@ body[data-dsh-rei-interface] [data-rei-capsule] {
 }
 
 body[data-dsh-rei-interface]:has(:is([data-phase='active'][data-chat-flow], [data-phase='active'] [data-chat-flow])) [data-skin-artwork] {
-  opacity: 0.11;
-  filter: saturate(0.46) drop-shadow(-10px 12px 22px rgba(7, 25, 37, 0.22));
+  opacity: 0.15;
+  filter: saturate(0.58) drop-shadow(-10px 12px 22px rgba(7, 25, 37, 0.22));
   transform: translateX(19%) scale(0.93);
 }
 
@@ -539,6 +539,10 @@ body[data-dsh-rei-interface] ::-webkit-scrollbar-thumb {
     right: -110px;
     width: 430px;
   }
+
+  body[data-dsh-rei-interface]:has(:is([data-phase='active'][data-chat-flow], [data-phase='active'] [data-chat-flow])) [data-skin-artwork] {
+    opacity: 0.1;
+  }
 }
 
 @media (max-width: 880px) {
@@ -553,6 +557,10 @@ body[data-dsh-rei-interface] ::-webkit-scrollbar-thumb {
 
   body[data-dsh-rei-interface] [data-phase='hero'] {
     --dsh-chat-content-width: min(90vw, 680px);
+  }
+
+  body[data-dsh-rei-interface]:has(:is([data-phase='active'][data-chat-flow], [data-phase='active'] [data-chat-flow])) [data-skin-artwork] {
+    opacity: 0.08;
   }
 }
 
@@ -573,6 +581,10 @@ body[data-dsh-rei-interface] ::-webkit-scrollbar-thumb {
 
   body[data-dsh-rei-interface] [data-composer-card]::before {
     left: 13px;
+  }
+
+  body[data-dsh-rei-interface]:has(:is([data-phase='active'][data-chat-flow], [data-phase='active'] [data-chat-flow])) [data-skin-artwork] {
+    opacity: 0.05;
   }
 }
 
