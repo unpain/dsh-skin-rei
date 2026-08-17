@@ -157,24 +157,6 @@ body[data-dsh-rei-interface] [data-rei-capsule] {
   box-shadow: inset 0 0 50px rgba(105, 204, 232, 0.08), 0 0 42px rgba(77, 172, 200, 0.07);
 }
 
-body[data-dsh-rei-interface] [data-rei-telemetry] {
-  position: absolute;
-  right: clamp(14px, 3vw, 54px);
-  bottom: 24px;
-  padding: 7px 12px 6px;
-  border: 1px solid rgba(121, 206, 233, 0.4);
-  color: rgba(45, 113, 135, 0.78);
-  background: rgba(235, 248, 251, 0.64);
-  font: 700 9px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
-  letter-spacing: 0.14em;
-  backdrop-filter: blur(8px);
-}
-
-body[data-dsh-rei-interface][data-ds-dark-theme] [data-rei-telemetry] {
-  color: rgba(185, 239, 251, 0.78);
-  background: rgba(4, 19, 30, 0.68);
-}
-
 body[data-dsh-rei-interface]:has(:is([data-phase='active'][data-chat-flow], [data-phase='active'] [data-chat-flow])) [data-skin-artwork] {
   opacity: 0.11;
   filter: saturate(0.46) drop-shadow(-10px 12px 22px rgba(7, 25, 37, 0.22));
@@ -183,10 +165,6 @@ body[data-dsh-rei-interface]:has(:is([data-phase='active'][data-chat-flow], [dat
 
 body[data-dsh-rei-interface]:has(:is([data-phase='active'][data-chat-flow], [data-phase='active'] [data-chat-flow])) :is([data-skin-orbit], [data-rei-capsule]) {
   opacity: 0.14;
-}
-
-body[data-dsh-rei-interface]:has(:is([data-phase='active'][data-chat-flow], [data-phase='active'] [data-chat-flow])) [data-rei-telemetry] {
-  opacity: 0;
 }
 
 body[data-dsh-rei-interface] [data-skin-chrome='rei-accent-rail'] {
@@ -200,20 +178,6 @@ body[data-dsh-rei-interface] [data-skin-chrome='rei-accent-rail'] {
   background: linear-gradient(90deg, var(--rei-eye) 0 38px, var(--rei-ice) 38px 38%, rgba(121, 206, 233, 0.08) 72%, transparent);
   box-shadow: 0 2px 14px rgba(55, 166, 199, 0.24);
   transition: left 180ms ease;
-}
-
-body[data-dsh-rei-interface] [data-skin-chrome='rei-accent-rail']::after {
-  content: 'UNIT-00 // PILOT OBSERVATION INTERFACE';
-  position: absolute;
-  top: 9px;
-  right: 18px;
-  padding: 5px 9px 4px;
-  border: 1px solid rgba(121, 206, 233, 0.36);
-  color: #b9effb;
-  background: rgba(5, 20, 31, 0.72);
-  font: 700 9px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
-  letter-spacing: 0.14em;
-  backdrop-filter: blur(10px);
 }
 
 body[data-dsh-rei-interface] [data-skin-chrome='rei-titlebar-brand'] {
@@ -582,11 +546,6 @@ body[data-dsh-rei-interface] ::-webkit-scrollbar-thumb {
 
   body[data-dsh-rei-interface] :is([data-skin-orbit], [data-rei-capsule]) {
     opacity: 0.1;
-  }
-
-  body[data-dsh-rei-interface] [data-rei-telemetry],
-  body[data-dsh-rei-interface] [data-skin-chrome='rei-accent-rail']::after {
-    display: none;
   }
 
   body[data-dsh-rei-interface] [data-phase='hero'] {

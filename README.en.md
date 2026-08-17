@@ -6,7 +6,7 @@ An unofficial Rei Ayanami / EVA Unit-00 interface skin for the DSH Web UI, built
 
 ## Highlights
 
-- Full-height Rei artwork, Unit-00 synchronization rings, and capsule telemetry on the welcome screen.
+- Full-height Rei artwork, Unit-00 synchronization rings, and capsule-glass styling on the welcome screen.
 - Artwork automatically fades, desaturates, and shifts aside during active conversations.
 - Deliberate light and dark treatments for settings, menus, terminal surfaces, messages, and disabled states.
 - Responsive and reduced-motion behavior.

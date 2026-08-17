@@ -23,17 +23,14 @@ function createArtworkStage() {
   const stage = createOwned('div', 'rei-artwork-stage')
   const orbit = document.createElement('span')
   const capsule = document.createElement('span')
-  const telemetry = document.createElement('span')
   const artwork = document.createElement('img')
   stage.setAttribute('aria-hidden', 'true')
   orbit.dataset.skinOrbit = ''
   capsule.dataset.reiCapsule = ''
-  telemetry.dataset.reiTelemetry = ''
-  telemetry.textContent = 'SUBJECT 00 // SYNC 00.0 // LCL CLEAR'
   artwork.dataset.skinArtwork = ''
   artwork.alt = ''
   artwork.src = SKIN_ART
-  stage.append(orbit, capsule, telemetry, artwork)
+  stage.append(orbit, capsule, artwork)
   return stage
 }
 

@@ -55,7 +55,7 @@ describe('Rei Ayanami Interface interface skin', () => {
     expect(document.body.hasAttribute('data-dsh-rei-interface')).toBe(true)
     expect(document.querySelector('[data-skin-artwork]')).not.toBeNull()
     expect(document.querySelector('[data-rei-capsule]')).not.toBeNull()
-    expect(document.querySelector('[data-rei-telemetry]')?.textContent).toContain('SUBJECT 00')
+    expect(document.querySelector('[data-rei-telemetry]')).toBeNull()
     expect(document.querySelector("[data-skin-chrome='rei-accent-rail']")).not.toBeNull()
     expect(document.head.querySelector("[data-skin-chrome='rei-styles']")).not.toBeNull()
 
