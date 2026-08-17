@@ -1,0 +1,28 @@
+{
+  "id": "dsh-skin-rei",
+  "name": "凌波丽 · UNIT-00",
+  "nameEn": "Rei Ayanami Interface",
+  "author": "Local DSH theme",
+  "tagline": "零号机冰蓝、医疗舱玻璃与静默同步界面",
+  "description": "一套面向 DSH Web UI 的凌波丽主题皮肤：以雾白、冰蓝、深海军蓝和克制的红瞳色构成 UNIT-00 医疗舱界面，并让角色立绘在欢迎页与对话页之间自适应退让。",
+  "tags": [
+    "anime",
+    "rei",
+    "unit-00",
+    "ice-blue",
+    "medical-capsule",
+    "hud"
+  ],
+  "accent": "#79C9E8",
+  "bodyAttr": "data-dsh-rei-interface",
+  "package": "dsh-skin-rei",
+  "wiring": {
+    "id": "ui-skin-rei-interface",
+    "bundleWired": false
+  },
+  "preview": {
+    "light": "preview/light.webp",
+    "dark": "preview/dark.webp"
+  },
+  "order": 3
+}
