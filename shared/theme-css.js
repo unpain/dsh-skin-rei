@@ -112,10 +112,12 @@ body[data-dsh-rei-interface] [data-skin-chrome='rei-artwork-stage'] {
 
 body[data-dsh-rei-interface] [data-skin-artwork] {
   position: absolute;
-  right: clamp(-42px, 1.8vw, 38px);
-  bottom: -2.5vh;
+  right: clamp(18px, 2vw, 36px);
+  bottom: clamp(12px, 1.6vh, 20px);
   width: auto;
-  height: min(93vh, 1040px);
+  height: min(88vh, 920px);
+  max-width: calc(100vw - var(--rei-sidebar-width) - 24px);
+  object-fit: contain;
   opacity: 0.93;
   filter: drop-shadow(-18px 22px 32px rgba(6, 26, 39, 0.3));
   transform-origin: right bottom;
@@ -522,8 +524,9 @@ body[data-dsh-rei-interface] ::-webkit-scrollbar-thumb {
 
 @media (max-width: 1180px) {
   body[data-dsh-rei-interface] [data-skin-artwork] {
-    right: -135px;
-    height: 84vh;
+    right: clamp(12px, 2vw, 24px);
+    bottom: 12px;
+    height: 82vh;
     opacity: 0.56;
   }
 
@@ -555,8 +558,8 @@ body[data-dsh-rei-interface] ::-webkit-scrollbar-thumb {
 
 @media (max-width: 620px) {
   body[data-dsh-rei-interface] [data-skin-artwork] {
-    right: -210px;
-    height: 72vh;
+    right: 8px;
+    height: 68vh;
     opacity: 0.055;
   }
 
