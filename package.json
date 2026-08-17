@@ -1,7 +1,7 @@
 {
   "name": "dsh-skin-rei",
   "description": "A restrained Unit-00 medical-capsule interface in frost blue, porcelain white, and red-focus accents.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "main": "lib/index.js",

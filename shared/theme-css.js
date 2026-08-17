@@ -50,7 +50,7 @@ body[data-dsh-rei-interface] {
   --dsw-shadow-lv2: var(--rei-shadow);
   --dsw-specific-input-major: rgba(248, 253, 254, 0.9);
   --dsw-specific-selector: rgba(225, 240, 244, 0.95);
-  --dsw-specific-sidebar-fill: rgba(6, 20, 31, 0.98);
+  --dsw-specific-sidebar-fill: rgba(234, 245, 248, 0.98);
 }
 
 body[data-dsh-rei-interface][data-ds-dark-theme] {
@@ -207,6 +207,23 @@ body[data-dsh-rei-interface] [data-skin-chrome='rei-titlebar-brand']::before {
 }
 
 body[data-dsh-rei-interface] :is([data-pane='sidebar'], [class*='sidebarCol']) {
+  --dsw-alias-label-primary: #132432;
+  --dsw-alias-label-secondary: #4f6876;
+  --dsw-alias-label-tertiary: #738995;
+  --dsw-alias-label-caption: #93a6ae;
+  --dsw-alias-border-l1: rgba(23, 102, 128, 0.14);
+  --dsw-alias-border-l2: rgba(23, 102, 128, 0.24);
+  --dsw-alias-interactive-bg-hover: rgba(72, 183, 216, 0.09);
+  --dsw-alias-interactive-bg-active: rgba(72, 183, 216, 0.18);
+  position: relative;
+  z-index: 6;
+  color: #132432;
+  border-right: 1px solid rgba(23, 102, 128, 0.25);
+  background: #eaf5f8;
+  box-shadow: 12px 0 38px rgba(25, 74, 91, 0.1), inset -2px 0 rgba(121, 206, 233, 0.1);
+}
+
+body[data-dsh-rei-interface][data-ds-dark-theme] :is([data-pane='sidebar'], [class*='sidebarCol']) {
   --dsw-alias-label-primary: #effbfe;
   --dsw-alias-label-secondary: #b6d0d9;
   --dsw-alias-label-tertiary: #83a4b0;
@@ -215,10 +232,8 @@ body[data-dsh-rei-interface] :is([data-pane='sidebar'], [class*='sidebarCol']) {
   --dsw-alias-border-l2: rgba(139, 216, 239, 0.24);
   --dsw-alias-interactive-bg-hover: rgba(121, 206, 233, 0.1);
   --dsw-alias-interactive-bg-active: rgba(121, 206, 233, 0.2);
-  position: relative;
-  z-index: 6;
   color: #effbfe;
-  border-right: 1px solid rgba(121, 206, 233, 0.42);
+  border-right-color: rgba(121, 206, 233, 0.42);
   background: #06141f;
   box-shadow: 12px 0 38px rgba(2, 12, 19, 0.25), inset -2px 0 rgba(121, 206, 233, 0.13);
 }
@@ -226,6 +241,14 @@ body[data-dsh-rei-interface] :is([data-pane='sidebar'], [class*='sidebarCol']) {
 body[data-dsh-rei-interface] :is([data-pane='sidebar'], [class*='sidebarCol']) > div {
   position: relative;
   overflow: hidden;
+  background:
+    linear-gradient(105deg, transparent 0 86%, rgba(23, 102, 128, 0.05) 86% 87%, transparent 87%),
+    radial-gradient(circle at 50% 11%, rgba(121, 206, 233, 0.13), transparent 32%),
+    repeating-linear-gradient(0deg, rgba(23, 102, 128, 0.015) 0 1px, transparent 1px 5px),
+    linear-gradient(180deg, #f4fbfd, #dcecf1 72%);
+}
+
+body[data-dsh-rei-interface][data-ds-dark-theme] :is([data-pane='sidebar'], [class*='sidebarCol']) > div {
   background:
     linear-gradient(105deg, transparent 0 86%, rgba(121, 206, 233, 0.05) 86% 87%, transparent 87%),
     radial-gradient(circle at 50% 11%, rgba(67, 159, 188, 0.16), transparent 32%),
@@ -238,10 +261,14 @@ body[data-dsh-rei-interface] :is([data-pane='sidebar'], [class*='sidebarCol']) >
   position: absolute;
   right: -12px;
   bottom: 86px;
-  color: rgba(139, 216, 239, 0.055);
+  color: rgba(23, 102, 128, 0.07);
   font: 900 128px/1 Arial, sans-serif;
   letter-spacing: -0.09em;
   pointer-events: none;
+}
+
+body[data-dsh-rei-interface][data-ds-dark-theme] :is([data-pane='sidebar'], [class*='sidebarCol']) > div::before {
+  color: rgba(139, 216, 239, 0.055);
 }
 
 body[data-dsh-rei-interface] :is([data-pane='sidebar'], [class*='sidebarCol']) > div > * {
@@ -250,6 +277,11 @@ body[data-dsh-rei-interface] :is([data-pane='sidebar'], [class*='sidebarCol']) >
 }
 
 body[data-dsh-rei-interface] button[class*='brand'] > svg {
+  color: #176680;
+  filter: drop-shadow(0 0 8px rgba(23, 102, 128, 0.15));
+}
+
+body[data-dsh-rei-interface][data-ds-dark-theme] button[class*='brand'] > svg {
   color: #d9f5fb;
   filter: drop-shadow(0 0 8px rgba(121, 206, 233, 0.22));
 }
