@@ -109,10 +109,10 @@ describe('Rei Ayanami Interface interface skin', () => {
   })
 
   it('registers without changing the page before selection', () => {
-    let registered: { id: string; name: string } | undefined
+    let registered: { id: string; name: string; author: string } | undefined
     const ctx = {
       skinManager: {
-        register(definition: { id: string; name: string }) {
+        register(definition: { id: string; name: string; author: string }) {
           registered = definition
           return () => undefined
         },
@@ -123,7 +123,7 @@ describe('Rei Ayanami Interface interface skin', () => {
     }
 
     apply(ctx as never)
-    expect(registered).toMatchObject({ id: 'dsh-skin-rei', name: '凌波丽 · UNIT-00' })
+    expect(registered).toMatchObject({ id: 'dsh-skin-rei', name: '凌波丽 · UNIT-00', author: 'yujimaka' })
     expect(document.body.hasAttribute('data-dsh-rei-interface')).toBe(false)
   })
 
